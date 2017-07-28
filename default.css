@@ -1,0 +1,21 @@
+body {
+  font-size: 120%;
+  margin: 0;
+}
+
+.grid {
+  /* display: inline-grid; */
+  /* display: subgrid; */
+  display: grid;
+  grid-gap: 5px;
+
+  /* You can also specify column and rom gap individually with: */
+  /* grid-column-gap: 5px;
+  grid-row-gap: 5px; */
+  grid-gap: 5px;
+}
+
+.grid > * {
+  padding: 1em;
+  background: lightgrey;
+}

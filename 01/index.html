@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/default.css">
+  <title>Document</title>
+  <style>
+  .grid {
+    grid-template-areas:
+    "header"
+    "main"
+    "aside-1"
+    "aside-2"
+    "footer";
+  }
+
+  @media screen and (min-width: 700px) {
+    .grid {
+      grid-template-areas:
+        "header header header"
+        "aside-1 main aside-2"
+        "footer footer footer";
+    }
+  }
+
+  .site-header {
+    grid-area: header;
+  }
+  .site-content {
+    grid-area: main;
+  }
+  .aside-1 {
+    grid-area: aside-1;
+  }
+  .aside-2 {
+    grid-area: aside-2;
+  }
+  .site-footer {
+    grid-area: footer;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <header class="site-header">Header</header>
+    <aside class="aside01">Aside 1</aside>
+    <main class="site-content">Section</main>
+    <aside class="aside02">Aside 2</aside>
+    <footer class="site-footer">Footer</footer>
+  </div>
+
+</body>
+</html>
